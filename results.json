@@ -1,0 +1,32 @@
+{
+  "run1": {
+    "GetTest": 0,
+    "TestCount": 5,
+    "TestTypes": 0,
+    "CreateTest": 0,
+    "DeleteTest": 4,
+    "EditTest": 0
+  },
+  "run2": {
+    "DeleteTest": 6,
+    "TestCount": 3,
+    "EditTest": 0,
+    "CreateTest": 0,
+    "TestTypes": 0
+  },
+  "run3": {
+    "DeleteTest": 4,
+    "TestCount": 3,
+    "EditTest": 0,
+    "CreateTest": 0,
+    "GetTest": 0
+  },
+  "run4": {
+    "GetTest": 0,
+    "TestCount": 3,
+    "TestTypes": 0,
+    "CreateTest": 0,
+    "DeleteTest": 4,
+    "EditTest": 0
+  }
+}

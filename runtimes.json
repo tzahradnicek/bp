@@ -1,0 +1,32 @@
+{
+  "run1": {
+    "GetTest": 3.8404,
+    "TestCount": 5.5669,
+    "TestTypes": 16.774,
+    "CreateTest": 0.9509,
+    "DeleteTest": 1.374,
+    "EditTest": 0.9485
+  },
+  "run2": {
+    "DeleteTest": 1.2634,
+    "TestCount": 5.5213,
+    "EditTest": 0.9501,
+    "CreateTest": 0.9511,
+    "TestTypes": 17.4633
+  },
+  "run3": {
+    "DeleteTest": 1.295,
+    "TestCount": 5.5649,
+    "EditTest": 0.9518,
+    "CreateTest": 0.9365,
+    "GetTest": 3.7943
+  },
+  "run4": {
+    "GetTest": 3.7259,
+    "TestCount": 5.6044,
+    "TestTypes": 19.4192,
+    "CreateTest": 0.9904,
+    "DeleteTest": 1.2764,
+    "EditTest": 1.0035
+  }
+}
