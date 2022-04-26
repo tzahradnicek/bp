@@ -47,13 +47,16 @@ class CustomResults(unittest.TestResult):
         self.addResult(test)
 
     def generateSummary(self):
-        p1 = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n{} tests finished. Summary:\n".format(self.failed+self.success) + fg.da_green + "PASSED: {}\n".format(self.success) + fg.rs
+        p1 = "{} tests executed. Summary:\n".format(self.failed+self.success) + fg.da_green + "PASSED: {}\n".format(self.success) + fg.rs
         p2 = fg.da_red + "FAIL: {}\n".format(self.failed) + fg.rs
         p3 = "SUCCESS RATE: {:.2%}\n".format(self.success / self.tests) + fg.rs
         p4 = "TOTAL RUNTIME: {:.4f} s".format(self.total) + fg.rs
-        return p1+p2+p3+p4
+        return p1+p2+p3+p4, self.success, self.failed, self.total, self.tests
 
     def generateEntry(self):
+        self.entry['Passed'] = self.success
+        self.entry['Failed'] = self.failed
+        self.entry['Runtime'] = self.total
         return self.entry
 
     def generateTime(self):
