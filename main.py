@@ -141,19 +141,20 @@ if __name__ == '__main__':
         testcases = TEST_SUITE
         toTest = createSuite(testcases=testcases, first=first)
     elif mode == 2:
+        minscore = int(input('Lowest test case score to be executed: '))
         next, sort, data = prioritize()
         procTimes = processTime()
         testcases = []
         output = []
         for i in range(1, len(list(TEST_SUITE.keys())) + 1):
-            if sort[-i][1] >= 3:
+            if sort[-i][1] >= minscore:
                 output.append(sort[-i][0])
                 testcases.append(TEST_SUITE[sort[-i][0]])
         print('The following test cases have been selected by the prioritization algorithm: ', output, '\n')
         toTest = createSuite(testcases=testcases, first=False)
     elif mode == 3:
         limit = int(input("Time limit (in seconds): "))
-        core = input("Would you like to add testcases that WILL be executed? ")
+        core = input("Would you like to add test cases that WILL be executed? ")
         if core[0] == 'y':
             user = True
             must = []
